@@ -15,5 +15,10 @@
     "sucrase": "^3.35.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "eslint": "^9.5.0",
+    "globals": "^15.6.0"
   }
 }
