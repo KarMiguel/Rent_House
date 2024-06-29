@@ -1,24 +1,19 @@
 import express from 'express';
 import routes from './routes';
-import mongoose from 'mongoose';
-import routes from './routes';
+
 import path from 'path';
 import cors from 'cors';
+import './database'
 
 
 class App {
 
   constructor() {
     this.server = express();
+
     this.middlewares();
     this.routes();
 
-    mongoose.connect('mongodb+srv://karMiguel:adminpass@cluster0.dcsjhhz.mongodb.net/yourDatabaseName?retryWrites=true&w=majority&appName=Cluster0', {
-    }).then(() => {
-      console.log('Database connection successful');
-    }).catch((err) => {
-      console.error('Database connection error:', err);
-    });
   }
 
   middlewares() {
