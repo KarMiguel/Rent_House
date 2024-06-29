@@ -1,17 +1,18 @@
-import swaggerJsdoc from 'swagger-jsdoc'
-import swaggerUi from'swagger-ui-express'
+import swaggerJsdoc from 'swagger-jsdoc';
+import swaggerUi from 'swagger-ui-express';
+
 
 const options = {
   swaggerDefinition: {
     openapi: '3.0.0',
     info: {
-      title: 'Exemplo API',
+      title: 'Rent House API',
       version: '1.0.0',
-      description: 'Descrição da API',
+      description: 'API para gerenciamento de aluguel de casas',
     },
   },
-  apis: ['./controllers/**/*.js'], 
-};
+  apis: ['../routes.js'],
+ };
 
 const specs = swaggerJsdoc(options);
 
